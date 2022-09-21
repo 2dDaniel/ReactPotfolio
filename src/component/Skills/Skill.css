@@ -1,0 +1,91 @@
+.skill .heading h1 {
+  font-size: 25px;
+}
+.skill .content {
+  max-width: 85%;
+  margin: auto;
+}
+.skill .box {
+  padding: 40px;
+}
+.skill hr {
+  margin: 30px 0 30px 0;
+  border: 1px solid #e3e9ed;
+  background-color: #e3e9ed;
+}
+.skill .rate {
+  width: 50%;
+}
+.skill img {
+  padding: 10px 30px 0 0;
+  max-width: 50%;
+}
+.skill p {
+  font-size: 18px;
+  transition: 0.5s;
+}
+.skill .box {
+  margin-bottom: 40px;
+  position: relative;
+}
+ .skill .box:hover p {
+  color: white;
+}
+.skill .content-section {
+  position: relative;
+}
+.skill .left {
+  position: relative;
+}
+.skill .left::after {
+  content: "";
+  position: absolute;
+  top: 11%;
+  left: 0;
+  height: 160vh;
+  width: 10px;
+  background: #d9dee2;
+  z-index: -2;
+}
+.skill .box::after {
+  content: "";
+  position: absolute;
+  top: 13%;
+  left: -8%;
+  height: 5px;
+  width: 50px;
+  background: #d9dee2;
+}
+.skill .box::before {
+  content: "";
+  position: absolute;
+  top: 10%;
+  left: -10%;
+  height: 10px;
+  width: 10px;
+  background: #fff;
+  border: 5px solid #d9dee2;
+  border-radius: 50%;
+  z-index: 5;
+  transition: 0.5s;
+}
+.skill .box:hover.box:before {
+  background: rgb(32, 41, 41);
+}
+@media (max-width: 768px) {
+  .skill .d_flex {
+    flex-direction: column;
+  }
+  .skill .left::after {
+    top: 14%;
+    height: 105vh;
+  }
+}
+/* @media (max-width: 995) {
+    .box .rate{
+      position: absolute;
+      left: 5px;  
+      top: 3px;  
+    }
+    
+  } */

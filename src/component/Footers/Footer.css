@@ -1,0 +1,26 @@
+footer{
+    background: linear-gradient(to bottom,#f2f4f5,rgb(176, 184, 184),#676e75, #676e75);
+    margin: 20% auto 0;
+}
+
+  footer p{
+    margin-top: 30px;
+    padding-bottom: 3%;
+    color: black;
+    margin-bottom: 0;
+  }
+.img{
+  height: 5vh;
+}
+  
+
+  /*----------Footer---------*/
+  @media (max-width: 768px) {
+    .grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .left,
+    .right {
+      width: 100%;
+    }
+  }

@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(to top left,#8d99a5,#676e75,rgb(182, 202, 202),#8d99a5,#676e75 );
+
+  /* background-color: #b6b9bd; */
+}
+.container {
+  max-width: 95%;
+  margin: auto;
+}
+.d_flex {
+  display: flex;
+  justify-content: space-between;
+}
+.f_flex {
+  display: flex;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+li {
+  list-style: none;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.capitalize {
+  text-transform: capitalize;
+}
+
+button {
+  border: none;
+  outline: none;
+  background-color: none;
+}
+
+.btn_shadow {
+  padding: 18px 25px;
+  border-radius: 6px;
+  transition: 0.3s all ease;
+  cursor: pointer;
+  color: #000;
+  transition: 0.5s;
+}
+.btn_shadow {
+  background: linear-gradient(145deg, #e2e8ec,rgb(121, 148, 148), #ffffff);
+  box-shadow: 4px 4px 8px #cbcbcb, -4px -4px 8px #ffffff;
+}
+.btn_shadow:hover {
+  color: white; 
+   background: linear-gradient(to top left,#8d99a5,rgb(98, 170, 170), #c0d3dd);
+  transform: translateY(-10px);
+}
+.box_shodow {
+  background: linear-gradient(145deg, #8d99a5,#8d99a5,rgb(105, 134, 134),rgb(98, 170, 170));
+  box-shadow: 4px 4px 8px #cbcbcb, -2px -2px 4px #ffffff;
+  border-radius: 10px;
+}
+.row,
+.left,
+.right {
+  width: 50%;
+}
+.top {
+  margin-top: 80px;
+}
+.mtop {
+  margin-top: 40px;
+}
+.heading {
+  margin: 50px 0 50px 0;
+}
+.heading h4 {
+  color: rgb(98, 170, 170);
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+.heading h1 {
+  font-size: 25px;
+  text-shadow: 2px 4px 3px red;
+  color: #fff;
+  -webkit-text-stroke: 2px rgb(67, 77, 77);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 35px;
+}
+p {
+  color: #3c3e41;
+}
+.text-center {
+  text-align: center;
+}
+/* .primary_color {
+  color: yellow;
+} */
+textarea,
+input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 17px;
+  outline: none;
+  border: 3px solid #7e8588;
+  margin-bottom: 20px;
+}
+/*----------Footer---------*/
+footer {
+  margin: 20% 0 10% 0;
+}
+footer p {
+  margin-top: 30px;
+}
+/*----------Footer---------*/
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .left,
+  .right {
+    width: 100%;
+  }
+}

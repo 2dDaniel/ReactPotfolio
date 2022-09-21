@@ -1,0 +1,30 @@
+
+  .mind .box h2 {
+    margin: 20px 0 20px 0;
+  }
+  .mind .box p {
+    word-spacing: 2px;
+    transition: 0.5s;
+  }
+  .mind .box i {
+    font-size: 30px;
+    margin-top: 30px;
+    transition: 0.5s;
+    opacity: 0;
+  }
+  .mind .box:hover p {
+    color: white;
+  }
+  .mind .box:hover i {
+    color: white;
+    opacity: 1;
+  }
+  @media (max-width: 768px) {
+    .mind .box{
+      max-width: 90%;
+    }
+   .mind{
+    width: 100%;
+    margin-right: 10px;
+    } 
+  }

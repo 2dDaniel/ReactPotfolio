@@ -1,0 +1,114 @@
+header {
+    height: 10vh;
+    line-height: 10vh;
+  }
+  header .container {
+    padding-top: 0;
+  }
+  h4{
+    color: rgb(97, 151, 151);
+
+    /* color: rgb(240, 233, 233); */
+    font-family: Serif;
+    font-size: 18px;
+    -webkit-text-stroke: 1px #110e0e;
+
+    /* -webkit-text-stroke: 2px rgb(12, 58, 58); */
+  }
+  
+  header h4 span{
+    /* -webkit-text-stroke: 1px #110e0e; */
+    -webkit-text-stroke: 2px rgb(12, 58, 58);
+
+  }
+  h4 span{
+    color: rgb(240, 233, 233);
+
+    /* color: rgb(97, 151, 151); */
+    font-size: 40px;
+    font-family: 'Times', serif, sans-serif;
+  }
+  header ul li {
+    margin-left: 30px;
+  }
+ 
+  header ul li a {
+    transition: 0.5s;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1px;
+  }
+  header ul li a:hover {
+    color: rgb(36, 59, 59);
+    -webkit-text-stroke: 1px rgb(98, 170, 170);
+    font-size: 18px;
+  }
+ 
+  .open {
+    display: none;
+  }
+  .header.active {
+    height: 12vh;
+    position: fixed;
+    z-index: 1000;
+    background: linear-gradient(to bottom,#676e75, #c0d3dd,#a7b0b9, rgb(98, 170, 170));
+    width: 100%;
+    /* background: linear-gradient(
+      to right bottom,
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.5)
+    ); */
+    box-shadow: -1px 11px 24px -11px rgba(0, 0, 0, 0.75);
+    transition: 0.5s;
+  }
+  @media (max-width: 768px) {
+    header ul {
+      padding-top: 30px;
+    }
+    .nav-links-mobile {
+      position: absolute;
+      display: block;
+      list-style: none;
+      box-shadow: rgba(50, 72, 93, 0.23) 0px 50px 100px -20px,
+       rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+      left: 0;
+      top: 0;
+      transition: all 0.5s ease-in-out;
+      width: 60%;
+      height: 100vh;
+      background: linear-gradient(to top left, #a2b0b8,rgb(184, 202, 202),#e7eaee,rgb(184, 202, 202),#b1bece, rgb(184, 202, 202));
+
+      /* background-color: white; */
+      z-index: 888;
+    }
+    header ul li {
+      width: 100%;
+      transition: all 0.5s ease-in-out;
+      text-transform: uppercase;
+      line-height: 50px;
+    }
+    header .link {
+      display: none;
+    }
+    .close,
+    .open {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      /* color: rgb(84, 124, 84); */
+      color: #5c5a5a;
+      display: block;
+      font-size: 35px;
+      z-index: 999;
+    }
+    .close {
+      right: 14%;
+      top: 6%;
+    }
+    .header.active {
+      height: 10vh;
+    }
+  }
+ .demo{
+  height: 20vh;
+ }
